@@ -54,5 +54,6 @@
   },
   "lint-staged": {
     "*": "oxlint --fix --no-error-on-unmatched-pattern"
-  }
+  },
+  "packageManager": "pnpm@12.18.0"
 }
