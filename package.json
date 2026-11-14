@@ -1,0 +1,58 @@
+{
+  "name": "weme-ui-starter",
+  "version": "0.0.0",
+  "private": true,
+  "homepage": "https://github.com/weme-ui/weme-ui",
+  "bugs": {
+    "url": "https://github.com/weme-ui/weme-ui/issues"
+  },
+  "license": "MIT",
+  "author": "Allen Luo <luoyi@mouji.net>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weme-ui/weme-ui.git"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "vue-tsc -b && vite build",
+    "dev": "vite",
+    "preview": "vite preview",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "format": "oxfmt",
+    "typecheck": "vue-tsc --noEmit",
+    "prepare": "simple-git-hooks"
+  },
+  "dependencies": {
+    "vue": "^3.5.45",
+    "vue-router": "^5.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@typescript/typescript6": "^6.0.2",
+    "@vitejs/devtools": "^0.8.2",
+    "@vitejs/plugin-vue": "^6.0.11",
+    "@vitejs/plugin-vue-jsx": "^5.1.6",
+    "@weme-ui/unocss-preset": "^0.8.0",
+    "lint-staged": "^17.6.0",
+    "magic-string": "^1.4.5",
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0",
+    "simple-git-hooks": "^2.14.0",
+    "tsrs": "^0.25.0-ts7.1.0-beta",
+    "unocss": "^66.13.0",
+    "unplugin-auto-import": "^21.1.0",
+    "unplugin-vue-components": "^32.1.0",
+    "unplugin-vue-define-options": "^3.1.4",
+    "vite": "^8.3.8",
+    "vite-plugin-vue-devtools": "^8.2.1",
+    "vite-plugin-vue-layouts": "^0.11.0",
+    "vue-tsc": "^3.3.14"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "oxlint --fix --no-error-on-unmatched-pattern"
+  }
+}

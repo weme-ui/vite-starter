@@ -1,0 +1,6 @@
+allowBuilds:
+  simple-git-hooks: true
+
+minimumReleaseAgeExclude:
+  - '@weme-ui/unocss-preset@0.8.0'
+  - vue-router@5.5.1
