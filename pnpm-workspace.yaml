@@ -4,3 +4,5 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - '@weme-ui/unocss-preset@0.8.0'
   - vue-router@5.5.1
+  - '@weme-ui/config@6.2.6'
+  - '@weme-ui/schema@6.2.6'

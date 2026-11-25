@@ -24,22 +24,23 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
-    "vue": "^3.5.45",
+    "vue": "^3.5.46",
     "vue-router": "^5.5.1"
   },
   "devDependencies": {
     "@types/node": "^26.6.6",
     "@typescript/typescript6": "^6.0.2",
-    "@vitejs/devtools": "^0.8.2",
+    "@vitejs/devtools": "^0.8.3",
     "@vitejs/plugin-vue": "^6.0.11",
     "@vitejs/plugin-vue-jsx": "^5.1.6",
-    "@weme-ui/unocss-preset": "^0.8.0",
-    "lint-staged": "^17.6.0",
+    "@weme-ui/config": "^6.2.6",
+    "@weme-ui/schema": "^6.2.6",
+    "lint-staged": "^17.6.2",
     "magic-string": "^1.4.5",
-    "oxfmt": "^0.78.0",
-    "oxlint": "^1.93.0",
+    "oxfmt": "^0.80.0",
+    "oxlint": "^1.95.0",
     "simple-git-hooks": "^2.14.0",
-    "tsrs": "^0.25.0-ts7.1.0-beta",
+    "tsrs": "^7.1.0-beta.tsrs5",
     "unocss": "^66.13.0",
     "unplugin-auto-import": "^21.1.0",
     "unplugin-vue-components": "^32.1.0",
@@ -55,5 +56,5 @@
   "lint-staged": {
     "*": "oxlint --fix --no-error-on-unmatched-pattern"
   },
-  "packageManager": "pnpm@12.18.0"
+  "packageManager": "pnpm@12.23.0"
 }
